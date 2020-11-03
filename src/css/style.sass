@@ -1,0 +1,964 @@
+
+
+
+
+*, *:after, *:before
+	box-sizing: border-box
+	font-family: 'Roboto'
+	padding: 0
+	margin: 0
+	text-decoration: none
+	color: inherit
+	max-width: 100%
+	// color: #fff
+	font-weight: 300
+	outline: none
+body
+	overflow-x: hidden
+	background: #fff
+
+ul
+	li
+		list-style: none
+
+.wrap
+	width: 100%
+	display: flex
+	justify-content: center
+
+.container
+	width: 90%
+	&_small
+		width: 75%
+
+
+
+.title_big
+	font-size: 62px
+	line-height: 77px
+	font-weight: 900
+
+.title_regular
+	font-size: 48px
+	line-height: 77px
+	font-weight: 900
+
+.regular_text
+	font-size: 24px
+	line-height: 32px
+
+.regular_big
+	font-size: 26px
+	line-height: 36px
+
+.regular_small
+	font-size: 18px
+	line-height: 24px
+	font-weight: bold
+
+.small_text
+	font-size: 16px
+	line-height: 21px
+
+
+.go-back
+	color: #939391
+	position: relative
+	&::before
+		content: ''
+		position: absolute
+		left: -30px
+		top: 50%
+		transform: translateY(-50%)
+		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13.503' height='23.619' viewBox='0 0 13.503 23.619'%3E%3Cpath id='Icon_ionic-ios-arrow-back' data-name='Icon ionic-ios-arrow-back' d='M4.071,11.806l8.937-8.93A1.688,1.688,0,0,0,10.617.493L.492,10.611a1.685,1.685,0,0,0-.049,2.327L10.61,23.127A1.688,1.688,0,0,0,13,20.743Z' fill='%23939391'/%3E%3C/svg%3E%0A")
+		width: 14px
+		height: 25px
+		background-repeat: no-repeat
+
+.title-block
+	&_underline
+		width: 100%
+		display: flex
+		flex-direction: column
+		align-items: center
+		margin-bottom: 50px
+	&__title
+		margin-bottom: 30px
+	&__del
+		width: 90%
+		height: 3px
+		background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(112,112,112,1) 50%, rgba(255,255,255,0) 100%);
+
+	
+.btn_default
+	width: 190px
+	height: 50px
+	display: flex
+	align-items: center
+	justify-content: center
+	background: #000000
+	color: #ffffff
+	border-radius: 25px
+	cursor: pointer
+	transition: .5s
+	&:hover
+		opacity: .7
+		transition: .5s
+
+
+.slick
+	&-slider
+		*
+			max-width: none
+
+	&-custom-arrow 
+		position: absolute
+		transform: translateY(-50%)
+		z-index: 100
+		padding: 14px 10px
+		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13.503' height='23.619' viewBox='0 0 13.503 23.619'%3E%3Cpath id='Icon_ionic-ios-arrow-back' data-name='Icon ionic-ios-arrow-back' d='M4.071,11.806l8.937-8.93A1.688,1.688,0,0,0,10.617.493L.492,10.611a1.685,1.685,0,0,0-.049,2.327L10.61,23.127A1.688,1.688,0,0,0,13,20.743Z' transform='translate(13.503 23.619) rotate(180)' opacity='0.2'/%3E%3C/svg%3E%0A")
+		background-repeat: no-repeat
+		cursor: pointer
+		&-right 
+			right: 0
+			top: 50%
+			right: -50px
+		&-left 
+			transform: rotate(180deg)
+			left: 0
+			// top: 50%
+			left: -50px
+
+
+
+.header
+	border-bottom: 1px solid #E9E9E9
+	height: 120px
+	background: transparent
+	z-index: 9
+	position: absolute
+	&-container 
+		display: flex
+		justify-content: space-between
+		align-items: center	
+		width: 60%
+
+	&-logo
+		img
+			max-width: 150px
+
+	&-nav
+		display: flex
+		align-items: center
+		width: 50%
+
+	.nav-list
+		display: flex
+		width: 100%
+		justify-content: space-around
+
+	&-contacts
+		display: flex
+
+		&__lang
+			margin-right: 10px
+
+	.burger
+		display: none
+		width: 40px
+		z-index: 9999
+		&__line
+			width: 100%
+			height: 4px
+			background: #707070
+			border-radius: 32px
+			margin-bottom: 5px
+			transform-origin: 20% 50%
+			transition: .5s
+			&:nth-child(2)
+				&.active
+					opacity: 0
+					transition: .5s
+			&:nth-child(1)
+				&.active
+					transform: rotate(45deg)
+					transition: .5s
+			&:nth-child(3)
+				&.active
+					transform: rotate(-45deg)
+					transition: .5s
+
+
+			
+				
+		
+.main
+	background: url('../img/mainBG.png')
+	background-position: center
+	background-size: cover
+	height: 100vh
+	min-height: 700px
+	padding-top: 120px
+	&-content
+		display: flex
+		flex-direction: column
+		align-items: center
+		position: relative
+
+	&-title
+		margin-top: 70px
+		margin-bottom: 100px
+		text-align: center
+		color: #707070
+		span
+			color: #000
+			font-weight: 800
+
+	.slick-list
+		width: 100%
+
+	&-questions-slider
+		margin-bottom: 70px
+		&__item
+			text-align: center
+		
+		.slick
+			&-slide
+				transition: .5s
+				transform: scale(.7)
+				opacity: .5
+			&-center
+				transition: .5s
+				transform: scale(1)
+				opacity: 1
+	&-circle
+		max-width: 144px
+
+	&-achievements
+		display: flex
+		position: absolute !important
+		bottom: 100px
+		width: 100%
+
+		&__item
+			display: flex !important
+			flex-direction: column
+			align-items: center
+		&__num
+			font-size: 42px
+			line-height: 69px
+			margin-bottom: 20px
+			font-weight: 900
+		&__text
+			background: #ffffff
+			padding: 15px
+			border-radius: 25px
+		
+.about
+	position: relative
+	height: 100vh
+	background: #F0F0F0
+	min-height: 700px
+
+	&::after
+		content: ''
+		background: url('../img/aboutBG.png')
+		background-position: right
+		background-size: cover
+		background-repeat: no-repeat
+		position: absolute
+		height: 100%
+		right: 0
+		top: 0
+		width: 50%
+		z-index: -1
+
+	&:before
+		content: ''
+		position: absolute
+		right: 0
+		top: 50%
+		background: linear-gradient(90deg, rgba(240,240,240,1) 0%, rgba(216,216,216,1) 50%)
+		width: 50%
+		height: 3px	
+
+	&-content
+		display: flex
+		justify-content: space-between
+		div
+			width: 47%
+
+	&-build
+		height: 100%
+		display: flex
+		align-items: center
+		img
+			width: 100%
+			height: 100%
+			object-fit: contain
+
+	&-info
+		padding-top: 320px
+		&__title
+			margin-bottom: 105px
+
+		&__text
+			margin-bottom: 40px
+			max-width: 600px
+			span
+				font-weight: bold
+
+.uniqueness
+	background: url('../img/uniquenessBG.png')
+	background-position: center
+	background-size: cover
+	// height: 100vh
+	min-height: 100vh
+	color: #ffffff
+	position: relative
+	padding-top: 115px
+
+	&:before
+		content: ''
+		position: absolute
+		left: 0
+		top: 22%
+		background: linear-gradient(90deg, #ffffff 0%, #8C8C8D 80%)
+		width: 50%
+		height: 3px	
+
+	&__title
+		margin-bottom: 144px
+
+	&-info
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		&__item
+			display: flex
+			align-items: center
+			width: 47%
+			margin-bottom: 100px
+		&__icon
+			margin-right: 20px
+		&__title
+			font-weight: bold
+
+.services
+	height: 100vh
+	padding-top: 80px
+	position: relative
+	background: #f0f0f0
+	min-height: 1100px
+	&::before,&::after
+		content: ""
+		position: absolute
+		z-index: -1
+		width: 50%
+		height: 100%
+		top: 0
+
+	&::before
+		background: url('../img/servicesBG-left.png')
+		background-size: cover
+		background-repeat: no-repeat
+		z-index: 0
+		left: 0
+	&::after
+		background: url('../img/servicesBG-right.png')
+		background-size: cover
+		background-repeat: no-repeat
+		z-index: 0
+		right: 0
+	&.active
+		background: #000
+		color: #fff
+		
+	&-content
+		display: flex
+		align-items: center
+		flex-direction: column
+		position: relative
+		z-index: 1
+	&-title-block
+		display: flex
+		flex-direction: column
+		align-items: center
+		position: relative
+		width: 100%
+		margin-bottom: 180px
+		&::after
+			content: ''
+			background: linear-gradient(90deg, rgba(240,240,240,1) 0%, #bbbbbb 50%, rgba(240,240,240,1) 100%)
+			width: 70%
+			height: 3px
+			position: absolute
+			bottom: -40px
+
+		&__tumbler
+			display: flex
+		.on-off-toggle 
+			width: 56px 
+			height: 24px 
+			position: relative 
+			display: inline-block 
+			&__slider 
+				width: 70px 
+				height: 23px 
+				display: block 
+				border-radius: 34px 
+				background-color: #F0F0F0 
+				transition: background-color 0.4s 
+				position: relative
+				border: 1px solid #000
+				margin: 0 15px
+				&:before
+					content: ''
+					display: block
+					background-color: #000
+					box-shadow: 0 0 0 1px #949494
+					bottom: 2px
+					height: 18px
+					left: 3px
+					position: absolute
+					transition: .4s
+					width: 18px
+					z-index: 5
+					border-radius: 100%
+				&:after 
+					display: block 
+					transition: all 0.4s 
+					padding-left: 8px 
+				.on-off-toggle__input 
+					position: absolute 
+					opacity: 0 
+			&__input 
+				display: none
+				&:checked 
+					& + .on-off-toggle__slider 
+						background-color: #000 
+						border: 1px solid #fff
+						&:before
+							transform: translateX(45px)
+							background: #fff
+	&-block
+		display: flex
+		align-items: center
+		justify-content: center
+		width: 1600px
+		height: 720px
+		.active
+			display: flex
+		
+	&-prevent
+		display: none
+		width: 100%
+		height: 100%
+		align-items: center
+		justify-content: center
+		position: relative
+		&__center
+			width: 100%
+			height: 100%
+			display: flex
+			align-items: center
+			justify-content: center
+			flex-direction: column
+			position: relative
+			background: url('../img/servises_prevent-center.png')
+			background-repeat: no-repeat
+			background-position: center
+
+		&__title
+			font-size: 58px
+			font-weight: 900
+
+		&__sub-title
+			text-transform: uppercase
+			font-size: 20px
+			font-weight: 900
+		&__desc
+			text-transform: uppercase
+			opacity: 0.5
+		
+	.arc
+		opacity: .5
+		transition: .5s
+		position: absolute
+
+		&:hover
+			opacity: 1
+			transition: .5s
+		&-one
+			background: url('../img/arc-one.svg')
+			background-repeat: no-repeat
+			height: 350px
+			padding-left: 550px
+			background-size: contain
+			top: -45px
+			left: 50%
+			transform: translateX(-17.5%)
+			display: flex
+			align-items: center
+
+		&-two
+			background: url('../img/arc-two.svg')
+			background-repeat: no-repeat
+			width: 200px
+			height: 420px
+			left: 40%
+			top: 120px
+			transform: translateX(-108%)
+
+		&-three
+			background: url('../img/arc-three.svg')
+			background-repeat: no-repeat
+			height: 85px
+			left: 50%
+			bottom: 9%
+			transform: translateX(-81%)
+
+		&-four
+			background: url('../img/arc-four.svg')
+			background-repeat: no-repeat
+			height: 410px
+			right: 40%
+			transform: translateX(108%)
+			top: 180px
+			padding-left: 200px
+			display: flex
+			align-items: flex-end
+			.arc__inner
+				margin-bottom: -55px	
+
+		&-two,&-three
+			padding-right: 550px
+			background-position-x: right
+			.arc
+				&__inner
+					margin-top: -45px
+					flex-direction: row-reverse
+					text-align: right
+				&__icon
+					margin-right: 0
+					margin-left: 20px
+
+		&__inner
+			display: flex
+			min-width: 400px
+			max-width: 450px
+			align-items: center
+		&__icon
+			margin-right: 20px
+		&__text
+			font-weight: 900
+
+	&-concept
+		display: none
+		width: 100%
+		height: 100%
+		align-items: center
+		justify-content: center
+		position: relative
+
+		.arc
+
+			&-one
+				background: url('../img/arc-one-white.svg')
+				background-repeat: no-repeat
+
+			&-two
+				background: url('../img/arc-two-white.svg')
+				background-repeat: no-repeat
+				background-position-x: right
+
+			&-three
+				background: url('../img/arc-three-white.svg')
+				background-repeat: no-repeat
+				background-position-x: right
+
+
+			&-four
+				background: url('../img/arc-four-white.svg')
+				background-repeat: no-repeat
+
+
+		&__center
+			width: 100%
+			height: 100%
+			display: flex
+			align-items: center
+			justify-content: center
+			flex-direction: column
+			position: relative
+			background: url('../img/servises_prevent-center-white.png')
+			background-repeat: no-repeat
+			background-position: center
+
+		&__title
+			font-size: 58px
+			font-weight: 900
+
+		&__sub-title
+			text-transform: uppercase
+			font-size: 20px
+			font-weight: 900
+		&__desc
+			text-transform: uppercase
+			opacity: 0.5
+
+.footer
+	height: 220px
+	background: #707070
+	color: #8C8C8D
+	
+	&-content
+		width: 80%
+		display: flex
+		align-items: center
+		justify-content: space-between
+	&-copyright
+		width: 33%
+		&__logo
+			max-width: 100px
+			margin-bottom: 15px
+	&-contacts
+		width: 33%
+		display: flex
+		flex-direction: column
+		text-align: right
+		color: #fff
+		&__tel
+			margin-bottom: 25px
+	&-center
+		width: 33%
+		display: flex
+		flex-direction: column
+		align-items: center
+	.social-common
+		margin-bottom: 15px
+	&-social
+		&-icon
+			margin: 0 10px
+			&:first-child
+				margin-left: 0
+			&:last-child
+				margin-right: 0
+
+.service-page
+	padding-top: 170px
+	position: relative
+	background: #f0f0f0
+	&::before
+		background: url('../img/servicesBG-left.png')
+		background-size: cover
+		background-repeat: no-repeat
+		left: 0
+		content: ""
+		position: absolute
+		z-index: 0
+		width: 50%
+		height: 100%
+		top: 0
+
+	&::after
+		content: ""
+		position: absolute
+		right: 0
+		top: 25%
+		background: url('../img/micBG.svg')
+		width: 550px
+		height: 80%
+		background-repeat: no-repeat
+	&__block-title
+		display: flex
+		justify-content: space-between
+		align-items: center
+		margin-bottom: 100px
+
+
+	&__desc
+		max-width: 900px
+		font-weight: normal
+		margin-bottom: 60px
+		span
+			font-weight: 900
+	&-list
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		&__item
+			width: 45%
+			margin-bottom: 70px
+			display: flex
+			align-items: center
+		&__icon
+			margin-right: 45px
+		&__text
+			max-width: 450px
+		&__title
+			font-weight: 900
+			margin-bottom: 10px
+	&-btn
+		margin: 0 auto
+		margin-bottom: 85px
+
+
+.pre-service
+	padding-top: 170px
+	position: relative
+	background: #f0f0f0
+	&::before
+		background: url('../img/servicesBG-left.png')
+		background-size: cover
+		background-repeat: no-repeat
+		left: 0
+		content: ""
+		position: absolute
+		z-index: 0
+		width: 50%
+		height: 100%
+		top: 0
+
+	&__block-title
+		display: flex
+		align-items: center
+		justify-content: space-between
+		width: 100%
+		margin-bottom: 100px
+	&-content
+		display: flex
+		flex-direction: column
+		align-items: center
+
+	&__info
+		max-width: 880px
+
+	&__img-block
+		margin-bottom: 50px
+		width: 100%
+		height: 390px
+		border-radius: 25px
+		overflow: hidden
+		img
+			object-fit: cover
+			width: 100%
+			height: 100%
+	&__desc
+		color: #707070
+		margin-bottom: 20px
+		&:last-child
+			margin-bottom: 60px
+
+.insights
+	padding-top: 170px
+	background: #f0f0f0
+	position: relative
+	z-index: 1
+	&::before,&::after
+		content: ""
+		position: absolute
+		z-index: 0
+		width: 50%
+		height: 100%
+		top: 0
+
+	&::before
+		background: url('../img/servicesBG-left.png')
+		background-size: cover
+		background-repeat: no-repeat
+		z-index: 0
+		left: 0
+		top: 0	
+	&::after
+		background: url('../img/servicesBG-right.png')
+		background-size: cover
+		background-repeat: no-repeat
+		z-index: -1
+		right: 0
+		top: 0	
+	&-list
+		z-index: 2
+		position: relative
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		margin-bottom: 50px
+		&__item
+			width: 33%
+			display: flex
+			align-items: center
+			flex-direction: column
+			max-width: 425px
+			background: #fff
+			margin-bottom: 40px
+			border-radius: 20px	
+			overflow: hidden
+		&__img-block
+			width: 100%
+			img
+				width: 100%
+		&__title-block
+			padding: 34px 0
+		&__title
+			font-weight: 900
+
+.contacts
+	padding-top: 170px
+	padding-bottom: 65px
+	background: #f0f0f0
+	position: relative
+	&::before,&::after
+		content: ""
+		position: absolute
+		z-index: 0
+		width: 50%
+		height: 100%
+		top: 0
+
+	&::before
+		background: url('../img/servicesBG-left.png')
+		background-size: cover
+		background-repeat: no-repeat
+		z-index: 0
+		left: 0
+		top: 0	
+	&::after
+		background: url('../img/servicesBG-right.png')
+		background-size: cover
+		background-repeat: no-repeat
+		right: 0
+		top: 0
+
+	&-content
+		width: 70%
+		position: relative
+		z-index: 2
+
+	&-info
+		display: flex
+		justify-content: space-between
+	.block
+		&-map,&-form
+			width: 45%
+		&-map
+			&__contacts
+				margin-bottom: 45px
+				display: flex
+				flex-wrap: wrap
+				a
+					font-weight: 900
+			&__mail,&__link,&__tel
+				position: relative
+				margin: 10px 0
+				margin-left: 60px
+				&::before
+					content: ''
+					position: absolute
+					top: 50%
+					transform: translateY(-50%)
+					left: -45px
+					width: 40px
+
+
+			&__mail
+				&::before
+					background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30.15' height='23.525' viewBox='0 0 30.15 23.525'%3E%3Cpath id='Icon_material-email' data-name='Icon material-email' d='M30.135,6H6.015a2.974,2.974,0,0,0-3,2.941L3,26.584a2.987,2.987,0,0,0,3.015,2.941h24.12a2.987,2.987,0,0,0,3.015-2.941V8.941A2.987,2.987,0,0,0,30.135,6Zm0,5.881-12.06,7.352L6.015,11.881V8.941l12.06,7.352,12.06-7.352Z' transform='translate(-3 -6)' fill='%235a5a5a'/%3E%3C/svg%3E%0A")
+					background-repeat: no-repeat
+					background-position-x: center
+					height: 25px
+			&__link
+				&::before
+					background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='39' height='23' viewBox='0 0 39 23'%3E%3Cg id='Group_233' data-name='Group 233' transform='translate(-1255.502 -815.125)'%3E%3Cpath id='Rectangle_119' data-name='Rectangle 119' d='M2,0H31a2,2,0,0,1,2,2V20a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V2A2,2,0,0,1,2,0Z' transform='translate(1258.502 815.125)' fill='%235a5a5a'/%3E%3Crect id='Rectangle_120' data-name='Rectangle 120' width='39' height='3' rx='1.5' transform='translate(1255.502 835.125)' fill='%235a5a5a'/%3E%3C/g%3E%3C/svg%3E ")
+					background-repeat: no-repeat
+					background-position-x: center
+					height: 24px
+			&__tel
+				&::before
+					background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='29' viewBox='0 0 16 29'%3E%3Cg id='Group_234' data-name='Group 234' transform='translate(-854 -321)'%3E%3Crect id='Rectangle_119' data-name='Rectangle 119' width='16' height='29' rx='3' transform='translate(854 321)' fill='%235a5a5a'/%3E%3Crect id='Rectangle_121' data-name='Rectangle 121' width='8' height='2' rx='1' transform='translate(858 345)' fill='%23f0f0f0'/%3E%3C/g%3E%3C/svg%3E ")
+					background-repeat: no-repeat
+					background-position-x: center
+					height: 27px
+
+			&__map 
+				border-radius: 20px	
+				overflow: hidden
+				margin-bottom: 45px
+				width: 590px
+				height: 330px
+
+			&__address
+				display: flex
+				justify-content: space-between
+			&__item
+				color: #5A5A5A
+				position: relative
+				margin-left: 45px
+				&::before
+					content: ''
+					background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='23.662' height='31.549' viewBox='0 0 23.662 31.549'%3E%3Cpath id='Icon_awesome-map-marker-alt' data-name='Icon awesome-map-marker-alt' d='M10.615,30.912C1.662,17.933,0,16.6,0,11.831a11.831,11.831,0,0,1,23.662,0c0,4.77-1.662,6.1-10.615,19.082a1.48,1.48,0,0,1-2.432,0ZM11.831,16.76a4.93,4.93,0,1,0-4.93-4.93A4.93,4.93,0,0,0,11.831,16.76Z' fill='%235a5a5a' opacity='0.5'/%3E%3C/svg%3E%0A")
+					background-repeat: no-repeat
+					background-position-x: center
+					position: absolute
+					top: 50%
+					transform: translateY(-50%)
+					left: -45px
+					width: 40px
+					height: 40px
+
+			&__title
+				font-weight: 900
+		&-form
+			border-radius: 20px
+			overflow: hidden
+			background: #fff
+			&__title
+				color: #ffffff
+				font-weight: 900
+				display: flex
+				justify-content: center
+				align-items: center
+				background: #313131
+				height: 80px
+				width: 100%
+				font-size: 28px
+			&__form
+				display: flex
+				flex-direction: column
+				align-items: center
+				padding: 45px 65px
+				.input-text
+					height: 40px
+					width: 100%
+					border: 0
+					border-bottom: 1px solid #707070
+					background: transparent
+					color: #3C3C3C
+					font-size: 18px
+					margin-bottom: 40px
+
+
+
+
+
+
+
+.error
+	padding-top: 170px
+	text-align: center
+	background: url('../img/whater.png')
+	background-size: cover
+	background-position: center
+	height: 100vh
+	&-content
+		display: flex
+		flex-direction: column
+		align-items: center
+	&-title
+		font-size: 152px
+		color: #5A5A5A
+		font-weight: 900
+	&-desc
+		max-width: 700px
+		margin-bottom: 60px
+		color: #3C3C3C

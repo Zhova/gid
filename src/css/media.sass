@@ -1,0 +1,291 @@
+@media screen and (max-width: 1700px)
+    .services
+        min-height: 900px
+        &-title-block
+            margin-bottom: 50px
+        &-block
+            zoom: .9
+
+    .contacts
+        &-info
+        .block-map,.block-map
+            &__contacts
+                margin-bottom: 25px
+            &__mail,&__link,&__tel
+                margin-left: 50px
+@media screen and (max-width: 1600px)
+    .services-block
+        zoom: .8
+
+    
+@media screen and (max-width: 1500px)
+    .title_regular
+        font-size: 26px
+        line-height: 30px
+    .regular_big
+        line-height: 30px
+    .regular_small
+        font-size: 16px
+        line-height: 18px
+    .small_text
+        font-size: 14px
+        line-height: 19px
+
+    .regular_text
+        font-size: 16px
+        line-height: 21px
+
+    .main
+        &-title
+            font-size: 46px
+            line-height: 32px
+            margin-top: 40px
+            margin-bottom: 70px
+        &-questions-slider
+            margin-bottom: 40px
+        &-circle
+            max-width: 100px
+
+    .about
+        &:before
+            top: 47%
+    .services
+        min-height: 700px
+        &-block
+            zoom: .7
+
+    .uniqueness
+        padding-top: 60px
+        &::before
+            top: 13%
+        &__title
+            margin-bottom: 100px
+        &-info
+            &__item
+                margin-bottom: 60px
+
+
+
+// =============== tablet 
+@media screen and (max-width: 1199px)
+    .container
+        width: 90%
+        &_small
+            width: 85%
+    .title_regular
+        font-size: 26px
+        line-height: 30px
+    .regular_big
+        line-height: 30px
+    .small_text
+        font-size: 14px
+        line-height: 19px
+
+    .regular_text
+        font-size: 16px
+        line-height: 21px
+
+    .go-back
+        display: none
+
+
+    .header
+        &-container
+            width: 85%
+        &-nav
+            position: absolute
+            width: 100%
+            height: 50vh
+            background: #fff
+            left: 0
+            top: 0
+            justify-content: center
+            z-index: 999
+            display: flex
+            flex-direction: column
+            padding: 20px
+            display: none
+        .nav-list
+            flex-direction: column
+            align-items: center
+            height: 100%
+        .burger
+            display: block
+
+    .main
+        min-height: 800px
+
+        &-title
+            font-size: 26px
+            line-height: 32px
+
+        &-circle
+            max-width: 60px
+
+    .about
+        padding: 30px 0
+        min-height: auto
+        &::before
+            top: 8%
+        &-content
+            flex-direction: column-reverse
+            align-items: center
+            justify-content: flex-end 
+            div
+                width: auto
+        &-build
+            height: 50%
+            margin-bottom: 40px
+        &-info
+            padding-top: 0px
+            &__title
+                text-align: center
+                margin-bottom: 50px
+            &__text
+                max-width: none
+                
+
+    .uniqueness
+        &::before
+            top: 10%
+        &-info
+            flex-direction: column
+            align-items: center
+            &__item
+                width: auto
+                flex-direction: column
+                text-align: center
+                margin-bottom: 40px
+        &__title
+            text-align: center
+            margin-bottom: 60px
+    .services
+        min-height: 650px
+        &-block
+            zoom: 1
+            height: auto
+            flex: 2
+        &-title-block
+            margin-bottom: 100px
+            &__title
+                margin-bottom: 30px
+            &__tumbler
+                flex-direction: column
+                align-items: center
+            .on-off-toggle__slider
+                margin: 10px 0 
+        .arc 
+            background: none
+            padding: 0
+            position: static
+            height: auto
+            width: auto
+            transform: translateX(0)
+            display: flex
+            flex-direction: column
+            align-items: center
+            max-width: 45%
+            margin-bottom: 60px
+
+            &__inner
+                display: flex
+                flex-direction: column !important
+                margin: 0 !important
+                min-width: auto
+                text-align: center !important
+                justify-content: space-around
+            &__icon
+                margin: 0 !important
+                max-width: 50px
+        &-prevent,&-concept
+            &__center
+                background: none
+                flex-direction: row
+                flex-wrap: wrap
+                justify-content: space-between
+            &__desc,
+            &__title,
+            &__sub-title,
+                display: none
+
+    .service-page
+        &::before
+            display: none
+        &::after
+            top: 30%
+        &__block-title
+            margin-bottom: 60px
+        &-list
+            &__item
+                width: 100%
+                margin-bottom: 60px
+                flex-direction: column
+            &__icon
+                margin-right: 0
+                margin-bottom: 25px
+            &__text
+                text-align: center
+
+    .insights-list__item
+        width: 49%
+
+
+    .contacts
+        &-content
+            width: auto
+            padding: 0 10px
+        &-info
+            flex-direction: column
+            align-items: center
+            .block-map
+                margin-bottom: 50px
+            .block-map,.block-map
+                width: auto
+        .block-form
+            width: 100%
+
+    
+
+
+@media screen and (max-width: 850px)
+    .about::before
+        top: 11vw
+    .uniqueness::before
+        top: 9%
+
+
+@media screen and (max-width: 600px)
+    .about::before
+        top: 14vw
+@media screen and (max-width: 500px)
+    .about::before
+        top: 19vw
+    .uniqueness::before
+        top: 7%
+@media screen and (max-width: 400px)
+    .about::before
+        top: 25vw
+// =============== mobile
+@media screen and (max-width: 767px)
+    .footer
+        padding: 40px
+        height: auto
+        &-content
+            flex-direction: column
+        &-copyright
+            width: auto
+            display: flex
+            align-items: center
+            flex-direction: column
+            margin-bottom: 20px
+        &-contacts
+            width: auto
+            text-align: center
+            &__tel
+                margin-bottom: 10px
+        &-center
+            width: auto
+            margin-bottom: 20px
+
+    .insights-list__item
+        width: 100%

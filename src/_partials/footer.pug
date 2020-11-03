@@ -1,0 +1,20 @@
+mixin footer
+	+b.footer.footer.wrap
+		+b.footer-content
+			+b.footer-copyright
+				+e.IMG.logo(src="./img/logo-footer.png")
+				+e.copyright.regular_small 2020 © All rights reserved
+			+b.footer-center
+				+b.social-common
+					+e.A.icon-instagram.footer-social-icon(href="#")
+						img(src="./img/icon-instagram.png", alt="alt")
+					+e.A.icon-facebook.footer-social-icon(href="#")
+						img(src="./img/icon-facebook.png", alt="alt")
+				+b.A.red-pix Designed by 
+					img(src="./img/red-pix.png")
+			+b.footer-contacts.regular_small
+				+e.A.tel(href="#") +380676827396
+				+e.A.mail(href="#") info@gid.wtf
+
+
+			

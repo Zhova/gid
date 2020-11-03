@@ -1,0 +1,24 @@
+mixin header
+	+b.HEADER.header.wrap
+		+b.header-container
+			+b.header-logo
+				a(href="/")
+					img(src="./img/logo.png", alt="")
+			+b.NAV.header-nav
+				+b.UL.nav-list
+					+e.LI.item 
+						a(href="#") О НАС
+					+e.LI.item 
+						a(href="#") УСЛУГИ
+					+e.LI.item 
+						a(href="#") ИНСАЙДЫ
+					+e.LI.item 
+						a(href="#") КОНТАКТЫ
+			+b.header-contacts
+				+e.lang RU
+				+e.tel 
+					a(href="tel:+000000000") +380xxxxxxxxx
+			+b.burger
+				+e.line
+				+e.line
+				+e.line

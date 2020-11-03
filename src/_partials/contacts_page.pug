@@ -1,0 +1,28 @@
+mixin contacts_page
+    +b.contacts.wrap
+        +b.contacts-content
+            +b.title-block_underline
+                +e.P.title.title_regular Контакты
+                +e.del
+            +b.contacts-info
+                +b.block-map
+                    +b.block-map__contacts.regular_big
+                        +e.A.mail info@gid.wtf
+                        +e.A.link gid.wtf
+                        +e.A.tel +380676827396
+                    +b.block-map__map
+                        iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3106.275352873259!2d-77.05862204285863!3d38.87194155833328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7b6df29ed2c27%3A0xaf83d0f8c013532f!2z0J_QtdC90YLQsNCz0L7QvQ!5e0!3m2!1suk!2sua!4v1597237067063!5m2!1suk!2sua" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0")
+                    +b.block-map__address
+                        +e.item
+                            +e.title.regular_big Киев
+                            +e.desc.regular_small Павла Тычины 1В, Silver Breeze 
+                        +e.item
+                            +e.title.regular_big Харьков
+                            +e.desc.regular_small Сумская 56 
+                +b.block-form
+                    +e.title Обратная связь
+                    +e.FORM.form
+                        +e.INPUT.name.input-text(type="text" placeholder="Ваше Имя")
+                        +e.INPUT.email.input-text(type="email" placeholder="Ваш e-mail")
+                        +e.INPUT.message.input-text(type="text" placeholder="Ваше сообщение")
+                        +b.INPUT.btn_default(type="submit")

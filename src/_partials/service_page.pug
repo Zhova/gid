@@ -1,0 +1,17 @@
+include ./service-page-list-item.pug
+
+mixin service_page
+    +b.service-page.wrap
+        +b.service-page-content.container_small
+            +b.service-page__block-title
+                +e.P.title.title_regular НАЗВАНИЕ УСЛУГИ
+                +b.A.go-back.regular_small(href="#") Ко всем услугам
+            +b.P.service-page__desc.regular_small #[span Описание сути услуги.] Эксперты в обеспечении комплексной безопасности бизнеса за счет использования методов бизнес-диагностики, метамоделирования и системного анализа, оперативного наблюдения, IT администрирования. Защитники бизнеса от внешних и внутренних угроз, мастера работы на упреждение, хранители "спокойствия" собственников и руководителей бизнеса 24/7.
+            +b.service-page-list
+                +service-page-list-item
+                +service-page-list-item
+                +service-page-list-item
+                +service-page-list-item
+                +service-page-list-item
+                +service-page-list-item
+            +b.A.service-page-btn.btn_default(href="#") Заказать

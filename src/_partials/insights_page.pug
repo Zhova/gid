@@ -1,0 +1,17 @@
+include insights-list-item.pug
+
+mixin insights_page
+    +b.insights.wrap
+        +b.insights-content.container_small
+            +b.title-block_underline
+                +e.P.title.title_regular Инсайты
+                +e.del
+            +b.insights-list
+                +insights-list-item
+                +insights-list-item
+                +insights-list-item
+                +insights-list-item
+                +insights-list-item
+                +insights-list-item
+            +b.A.service-page-btn.btn_default(href="#") Заказать
+            

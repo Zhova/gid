@@ -1,0 +1,9 @@
+mixin error_page
+    +b.error.wrap
+        +b.error-content.container
+            +b.title-block_underline
+                +e.P.title.title_regular Инсайты
+                +b.error-title 404
+                +e.del
+            +b.error-desc.regular_small Здесь ничего нет, поскольку запрашиваемая страница недоступна или не существует. Вернитесь на главную или повторите запрос позже.
+            +b.A.service-page-btn.btn_default(href="#") На главную

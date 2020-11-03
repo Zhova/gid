@@ -1,0 +1,53 @@
+mixin services_screen 
+    +b.services.wrap
+        +b.services-content.container
+            +b.services-title-block
+                +e.title.title_regular НАШИ УСЛУГИ:
+                +e.tumbler 
+                    +e.SPAN.regular_small Предотвратить угрозу
+                    input#bopis.on-off-toggle__input(type='checkbox')
+                    label.on-off-toggle__slider(for='bopis')
+                    +e.SPAN.regular_small Устранить угрозу
+            +b.services-block
+                +b.services-prevent.active
+                    +e.center
+                        +e.P.title 27/7
+                        +e.P.sub-title.regular_text защита бизнеса
+                        +e.P.desc.small_text срочные услуги
+                        +b.arc.arc-one
+                            +e.inner
+                                +e.IMG.icon(src="./img/humans.png")
+                                +e.P.text.regular_text Background Check сотрудников
+                        +b.arc.arc-two
+                            +e.inner
+                                +e.IMG.icon(src="./img/humans.png")
+                                +e.P.text.regular_text Background Check сотрудников
+                        +b.arc.arc-three
+                            +e.inner
+                                +e.IMG.icon(src="./img/humans.png")
+                                +e.P.text.regular_text Background Check сотрудников
+                        +b.arc.arc-four
+                            +e.inner
+                                +e.IMG.icon(src="./img/humans.png")
+                                +e.P.text.regular_text Background Check сотрудников
+                +b.services-concept
+                    +e.center
+                        +e.P.title 27/7
+                        +e.P.sub-title.regular_text защита бизнеса
+                        +e.P.desc.small_text срочные услуги
+                        +b.arc.arc-one
+                            +e.inner
+                                +e.IMG.icon(src="./img/convert.png")
+                                +e.P.text.regular_text 2Background Check сотрудников
+                        +b.arc.arc-two
+                            +e.inner
+                                +e.IMG.icon(src="./img/convert.png")
+                                +e.P.text.regular_text 2Background Check сотрудников
+                        +b.arc.arc-three
+                            +e.inner
+                                +e.IMG.icon(src="./img/convert.png")
+                                +e.P.text.regular_text 2Background Check сотрудников
+                        +b.arc.arc-four
+                            +e.inner
+                                +e.IMG.icon(src="./img/convert.png")
+                                +e.P.text.regular_text 2Background Check сотрудников
